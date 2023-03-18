@@ -1,0 +1,52 @@
+body {
+    background-color: #d5e1ef;
+    font-family:'Outfit', 'serif';
+}
+
+.panel {
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+    width:300px;
+    height: 500px;
+    display:block;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.description {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    color:#84848d;
+    font-weight: 400;
+}
+
+.qrCode {
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: auto;
+}
+
+.attribution {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
