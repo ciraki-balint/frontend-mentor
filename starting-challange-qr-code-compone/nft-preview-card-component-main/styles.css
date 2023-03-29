@@ -1,0 +1,173 @@
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cairo: "Outfit", serif;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: var(--cairo);
+  font-size: 18px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
+  min-height: 1000px;
+}
+
+.card {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  max-height: 500px;
+  max-width: 250px;
+  background-color: var(--card-bg);
+}
+
+.nft-pic {
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.pic-container {
+  margin-bottom: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.overlay {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: var(--cyan);
+  opacity: 0;
+}
+
+.view-icon {
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.pic-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: var(--cairo);
+  color: var(--white);
+  font-size: 18px;
+}
+
+.title:hover {
+  color: var(--cyan);
+}
+
+.descript {
+  padding-bottom: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  color: var(--soft-blue);
+}
+
+.svg-icon {
+  margin-right: 5px;
+}
+
+h1 {
+  border: none;
+  background-color: var(--soft-blue);
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  color: var(--cyan);
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+  color: var(--soft-blue);
+}
+
+.user {
+  font-size: 14px;
+  margin: 5px;
+  display: flex;
+  float: left;
+  color: var(--soft-blue);
+}
+
+.creator {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.nickname {
+  margin-left: 5px;
+  text-align: center;
+  color: var(--white);
+}
+
+.nickname:hover {
+  color: var(--cyan);
+}
+
+.avatar {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 10%;
+  height: 10%;
+}
