@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="title">SPLI</p>
+      <p class="title">TTER</p>
+    </header>
+    <div class="container">
+      <div class="calc-container">
+        <div class="left-container">
+          <div class="bill-input-container">
+            <span class="input-label">Bill</span>
+            <input id="bill" type="text" class="input-bill" value="0" />
+          </div>
+          <div class="tip-percent-container">
+            <span class="input-label">Select Tip %</span>
+            <div class="bill-input-container">
+              <button type="button" class="percent-button">5%</button>
+              <button type="button" class="percent-button">10%</button>
+              <button type="button" class="percent-button">15%</button>
+              <button type="button" class="percent-button">25%</button>
+              <button type="button" class="percent-button">50%</button>
+              <input id="person"
+                class="percent-button-custom"
+                type="text"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div class="bill-input-container">
+            <span class="input-label">Number of People</span
+            ><span id="errorLabel" class="error-label" hidden
+              >Can't be zero!</span
+            >
+            <input type="text" class="input-person" />
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="tip-amount-container">
+            <span class="amount-title">Tip amount</span>
+            <span class="tip-amount">$4.27</span>
+            <p class="person-label">/ person</p>
+          </div>
+          <div class="total-amount-container">
+            <span class="amount-title">Total</span>
+            <span class="total-amount">$32.79</span>
+            <p class="person-label">/ person</p>
+          </div>
+          <button type="button" class="reset-button">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

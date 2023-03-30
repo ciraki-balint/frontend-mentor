@@ -1,0 +1,215 @@
+:root{
+
+    /* Primary */
+    --strong-cyan:hsl(172, 67%, 45%);
+
+    /* Neutural */
+    --dark-cyan:hsl(183, 100%, 15%);
+    --dark-grayish-cyan:hsl(186, 14%, 43%);
+    --graysih-cyan:hsl(184, 14%, 56%);
+    --light-grayish-cyan:hsl(185, 41%, 84%);
+    --very-light-grayish-cyan:hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%)
+}
+
+body {
+    font-family: "Space Mono";
+    background-color: var(--light-grayish-cyan);
+}
+
+.title{
+    color:var(--dark-cyan);
+    font-size:45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grayish-cyan);
+    min-height: 1000px;
+    max-height: 1000px;
+}
+
+.calc-container {
+    padding:30px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    width:900px;
+}
+
+.left-container {
+    border-radius: 15px;
+    background-color: var(--white);
+    float:left;
+    display: block;
+    width:50%;
+    height:100%;
+}
+
+
+.right-container {
+    border-radius: 15px;
+    background-color:var(--dark-cyan);
+    float:left;
+    display: block;
+    width:50%;
+    height:100%;
+}
+
+
+.tip-amount-container {
+    padding:25px;
+    max-height: 50px;
+    width:100%;
+}
+
+.total-amount-container {
+    padding:25px;
+    max-height: 50px;
+    width:100%;
+}
+
+.person-label{
+    color:var(--graysih-cyan);
+}
+
+.amount-title {
+    color: var(--white);
+}
+
+.tip-amount-container .tip-amount {
+    font-weight: 700;
+    margin-right: 10%;
+    font-size:40px;
+    color:var(--strong-cyan);
+    float:right;
+}
+
+.total-amount-container .total-amount {
+    font-weight: 700;
+    margin-right: 10%;
+    font-size: 40px;
+    color:var(--strong-cyan);
+    float:right;
+}
+
+.input-icon-placeholder{
+    color:var(--light-grayish-cyan);
+    float: left !important;
+}
+
+.bill-input-container{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.percent-button{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Space Mono', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    height: 40px !important;
+    width: 27% !important;
+}
+
+.percent-button-custom {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Space Mono', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
+    height: 40px !important;
+    width: 26% !important;
+}
+
+.percent-button-custom::placeholder{
+    text-align: center;
+}
+
+
+.input-label {
+    margin-bottom: 10px;
+}
+
+.error-label{
+    margin-right: 10%;
+    float:right;
+    color:red;
+}
+
+.input-bill {
+    font-weight: 700;
+    width: 90% !important;
+    background: url("./images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    width:100%;
+    font-size: 24px;
+    font-family: 'Space Mono', sans-serif;
+    text-align: right;
+    color:var(--dark-cyan);
+}
+
+.input-bill:focus{
+    outline: none;
+    border:2px solid var(--strong-cyan);
+}
+
+.input-person:focus{
+    outline: none;
+    border:2px solid var(--strong-cyan);
+}
+
+
+.input-person {
+    font-weight: 700;
+    width: 90% !important;
+    background: url("./images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    width:100%;
+    font-size: 24px;
+    font-family: 'Space Mono', sans-serif;
+    text-align: right;
+    color:var(--dark-cyan);
+}
+
+.reset-button{
+    color:var(--dark-cyan);
+    font-weight: 700;
+    font-size:24px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width:90%;
+    background-color: var(--strong-cyan);
+}
