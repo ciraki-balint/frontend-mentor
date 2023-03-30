@@ -1,0 +1,144 @@
+:root {
+    /*primary*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(166, 100%, 37%);
+
+    /*gradients*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*netural*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-greay-blue: hsl(224, 30%, 27%);
+}
+
+.container {
+    min-width: 600px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-panel {
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.result-panel-left {
+    border-radius: 30px;
+    max-width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--light-slate-blue);
+}
+
+.result-panel-left-title {
+    color: var(--dark-greay-blue);
+}
+
+.result-panel-left-score-circle {
+    border-radius: 50%;
+    background-color: var(--violet-blue);
+}
+
+.result-panel-left-score-circle-total-result {
+    padding: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 25px;
+}
+
+.result-panel-left-100 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--dark-greay-blue);
+    font-size: 18px;
+}
+
+.result-panel-summary {
+    max-width: 50%;
+
+    align-items: center;
+    text-align: center;
+}
+
+.result-panel-summary-title {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.result-panel-category-reaction {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0.3;
+    background: var(--light-red);
+
+}
+
+.result-panel-category-reaction-title {
+    color: var(--light-red);
+
+}
+
+.result-panel-category-memory {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--orangey-yellow);
+}
+
+.result-panel-category-verbal {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--green);
+}
+
+.result-panel-category-visual {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--violet-blue);
+}
+
+.result-panel-category-score {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    float: right;
+}
+
+
+
+
+body {
+    font-family: "Hanken-Grotesk";
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
