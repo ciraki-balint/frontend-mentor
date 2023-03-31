@@ -44,12 +44,12 @@
           <div class="tip-percent-container">
             <span class="input-label">Select Tip %</span>
             <div class="bill-input-container">
-              <button type="button" class="percent-button">5%</button>
-              <button type="button" class="percent-button">10%</button>
-              <button type="button" class="percent-button">15%</button>
-              <button type="button" class="percent-button">25%</button>
-              <button type="button" class="percent-button">50%</button>
-              <input id="person"
+              <button id="button5" type="button" class="percent-button">5%</button>
+              <button id="button10" type="button" class="percent-button">10%</button>
+              <button id="button15" type="button" class="percent-button">15%</button>
+              <button id="button25" type="button" class="percent-button">25%</button>
+              <button id="buttonC" type="button" class="percent-button">50%</button>
+              <input
                 class="percent-button-custom"
                 type="text"
                 placeholder="Custom"
@@ -61,7 +61,7 @@
             ><span id="errorLabel" class="error-label" hidden
               >Can't be zero!</span
             >
-            <input type="text" class="input-person" />
+            <input id="person" max="9" type="text" class="input-person" />
           </div>
         </div>
         <div class="right-container">

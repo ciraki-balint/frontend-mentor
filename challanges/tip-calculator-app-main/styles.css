@@ -28,7 +28,6 @@ body {
 
 .container {
     display: grid;
-    align-items: center;
     justify-content: center;
     background-color: var(--light-grayish-cyan);
     min-height: 1000px;
@@ -151,7 +150,13 @@ body {
     color:red;
 }
 
+.active {
+    color:var(--dark-cyan);
+    background-color: var(--strong-cyan);
+}
+
 .input-bill {
+    text-indent: -10px;
     font-weight: 700;
     width: 90% !important;
     background: url("./images/icon-dollar.svg");
@@ -196,12 +201,13 @@ body {
     color:var(--dark-cyan);
 }
 
+
 .reset-button{
     color:var(--dark-cyan);
     font-weight: 700;
     font-size:24px;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-right: 20px;
     margin-left: 20px;
     border: none;
