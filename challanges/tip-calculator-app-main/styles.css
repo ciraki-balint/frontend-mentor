@@ -155,6 +155,10 @@ body {
     background-color: var(--strong-cyan);
 }
 
+.custom-active {
+    
+}
+
 .input-bill {
     text-indent: -10px;
     font-weight: 700;

@@ -44,12 +44,12 @@
           <div class="tip-percent-container">
             <span class="input-label">Select Tip %</span>
             <div class="bill-input-container">
-              <button id="button5" type="button" class="percent-button">5%</button>
-              <button id="button10" type="button" class="percent-button">10%</button>
-              <button id="button15" type="button" class="percent-button">15%</button>
-              <button id="button25" type="button" class="percent-button">25%</button>
-              <button id="buttonC" type="button" class="percent-button">50%</button>
-              <input
+              <button id="button5"  onclick="toggleActive(this)" type="button" class="percent-button">5%</button>
+              <button id="button10" onclick="toggleActive(this)" type="button" class="percent-button">10%</button>
+              <button id="button15" onclick="toggleActive(this)" type="button" class="percent-button">15%</button>
+              <button id="button25" onclick="toggleActive(this)" type="button" class="percent-button">25%</button>
+              <button id="button50" onclick="toggleActive(this)" type="button" class="percent-button">50%</button>
+              <input id="buttonC"
                 class="percent-button-custom"
                 type="text"
                 placeholder="Custom"
@@ -67,12 +67,12 @@
         <div class="right-container">
           <div class="tip-amount-container">
             <span class="amount-title">Tip amount</span>
-            <span class="tip-amount">$4.27</span>
+            <span id="tip-amount" class="tip-amount">$4.27</span>
             <p class="person-label">/ person</p>
           </div>
           <div class="total-amount-container">
             <span class="amount-title">Total</span>
-            <span class="total-amount">$32.79</span>
+            <span id="total-amount" class="total-amount">$32.79</span>
             <p class="person-label">/ person</p>
           </div>
           <button type="button" class="reset-button">RESET</button>

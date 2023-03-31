@@ -8,10 +8,36 @@ let button25 = document.getElementById("button25");
 let button50 = document.getElementById("button50");
 let buttonC = document.getElementById("buttonC");
 
-let percentButtons = document.getElementsByClassName("percent-button");
-
+let percentButtons = document.querySelectorAll(".percent-button");
 console.log(percentButtons);
 
+function toggleActive(button){
+    percentButtons.forEach(function(item){
+        if (item != button){
+            if (item.classList.contains("active")){
+                item.classList.remove("active");
+            } else {
+                button.classList.add("active");
+            }
+        } else if (item == button && item.classList.contains("active")){
+            button.classList.remove("active");
+        }
+
+    })
+    //TODO
+}
+
+function calcTip(bill,percent,person){
+    if(person != undefined && percent != "0" && bill == "0"){
+        //TODO
+    }
+}
+
+function calcTotal(bill,percent,person){
+    if(person != undefined && percent != "0" && bill == "0"){
+        //TODO
+    }
+}
 person.addEventListener("change",function(){
     if (person.value == "0" || person.value == ""){
         person.style.border = "2px solid red";
@@ -22,24 +48,3 @@ person.addEventListener("change",function(){
     }
 })
 
-button5.addEventListener("click",function(){
-    if (percentButtons.classList.contains("active")){
-        percentButtons.forEach(function() {
-            this.classList.remove("active");
-        });
-        percentButtons.classList.remove("active");
-    }
-    this.classList.add("active");
-})
-
-function toggelActive(){
-    
-}
-
-
-
-
-
-
-console.log(bill);
-console.log(person);
