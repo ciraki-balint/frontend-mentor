@@ -139,6 +139,10 @@ body {
     text-align: center;
 }
 
+.percent-button-custom::target-text{
+    text-align: right;
+}
+
 
 .input-label {
     margin-bottom: 10px;
@@ -152,11 +156,11 @@ body {
 
 .active {
     color:var(--dark-cyan);
-    background-color: var(--strong-cyan);
+    background-color: var(--light-grayish-cyan)
 }
 
-.custom-active {
-    
+.percent-button-custom {
+
 }
 
 .input-bill {
@@ -222,4 +226,8 @@ body {
     padding: 15px;
     width:90%;
     background-color: var(--strong-cyan);
+}
+
+.reset-button:hover {
+    background-color: var(--light-grayish-cyan);
 }

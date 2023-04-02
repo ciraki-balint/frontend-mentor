@@ -29,9 +29,21 @@ function toggleActive(button){
 
 function calcTip(bill,percent,person){
     if(person != undefined && percent != "0" && bill == "0"){
-        //TODO
+        
     }
 }
+
+ bill.addEventListener("click",function(){
+    percentButtons.forEach(function(item){
+        if(item.classList.contains("active")){
+            item.classList.remove("active");
+        }
+    })
+    person.textContent = "";
+    bill.textContent = "";
+ });
+
+
 
 function calcTotal(bill,percent,person){
     if(person != undefined && percent != "0" && bill == "0"){
